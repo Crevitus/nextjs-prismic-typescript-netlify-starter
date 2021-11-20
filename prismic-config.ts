@@ -1,14 +1,6 @@
-﻿// -- Prismic Repo Name
-export const repoName = 'your-repo-name';
-
-// -- Prismic API endpoint
-// Determines which repository to query and fetch data from
-// Configure your site's access point here
+﻿export const repoName = process.env.PRISMIC_REPO_NAME;
 export const apiEndpoint = `https://${repoName}.prismic.io/api/v2`;
-
-// -- Access Token if the repository is not public
-// Generate a token in your dashboard and configure it here if your repository is private
-export const accessToken = '';
+export const accessToken = process.env.PRISMIC_ACCESS_TOKEN;
 
 // -- Link resolution rules
 // Manages the url links to internal Prismic documents
