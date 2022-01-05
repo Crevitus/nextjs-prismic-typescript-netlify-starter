@@ -1,4 +1,4 @@
-﻿import Prismic from '@prismicio/client';
+﻿import * as prismic from '@prismicio/client';
 import Link from 'next/link';
 
 import {
@@ -20,7 +20,7 @@ export const customLink = (type, element, content, children, index) => (
 
 // Initialises the Prismic Client that's used for querying the API and passes it any query options.
 export const Client = (req = null) => (
-    Prismic.client(apiEndpoint, createClientOptions(req, accessToken, Router))
+    prismic.createClient(apiEndpoint, createClientOptions(req, accessToken, Router))
 );
 
 // Options to be passed to the Client

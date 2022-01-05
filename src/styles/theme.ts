@@ -1,5 +1,5 @@
 ﻿import '@emotion/react';
-import { Theme } from '@emotion/react';
+import {Theme} from '@emotion/react';
 
 const colors = {
     primary: '#29B394',
@@ -12,7 +12,8 @@ export interface AppTheme {
 }
 
 declare module '@emotion/react' {
-    export interface Theme extends AppTheme {}
+    export interface Theme extends AppTheme {
+    }
 }
 
 export interface ThemeProps {
