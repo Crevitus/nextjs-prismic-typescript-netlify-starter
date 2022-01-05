@@ -18,7 +18,7 @@ export const customLink = (type, element, content, children, index) => (
     </Link>
 );
 
-// Initialises the Prismic Client that's used for querying the API and passes it any query options.
+// Initialises the Prismic Client that is used for querying the API and passes it any query options.
 export const Client = (req = null) => (
     prismic.createClient(apiEndpoint, createClientOptions(req, accessToken, Router))
 );
