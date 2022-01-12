@@ -3,6 +3,9 @@
   command = "next build"
   functions = "netlify/functions"
   publish = ".next"
+[build.environment]
+# Change this path with the path to your repository
+GO_IMPORT_PATH = "https://github.com/Crevitus/nextjs-prismic-typescript-netlify-starter"
 
   ## (optional) Settings for Netlify Dev
   ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
