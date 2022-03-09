@@ -1,11 +1,12 @@
-﻿{
+{
     "plugins": [
         "jest-dom",
         "unused-imports"
     ],
     "extends": [
         "next/core-web-vitals",
-        "plugin:jest-dom/recommended"
+        "plugin:jest-dom/recommended",
+        "prettier"
     ],
     "env": {
         "es6": true,
@@ -35,7 +36,6 @@
                 "ignoreTemplateLiterals": false
             }
         ],
-        "indent": ["error", 4],
         "comma-dangle": ["error", "only-multiline"],
         "no-unused-vars": "off",
         "react/require-default-props": 0,
@@ -45,8 +45,8 @@
             1,
             {
                 "extensions": [
-                    ".ts",
-                    ".tsx"
+                    ".tsx",
+                    ".jsx"
                 ]
             }
         ],

@@ -1,27 +1,22 @@
-﻿import '@emotion/react';
-import {Theme} from '@emotion/react';
+﻿import { createTheme } from '@mui/material';
+import { orange } from '@mui/material/colors';
 
-const colors = {
-    primary: '#29B394',
-    secondary: '#F2495E',
-    white: '#ffffff'
-};
-
-export interface AppTheme {
-    colors: typeof colors;
-}
-
-declare module '@emotion/react' {
-    export interface Theme extends AppTheme {
+declare module '@mui/material/styles' {
+    interface Theme {
+        status: {
+            danger: string;
+        };
+    }
+    // allow configuration using `createTheme`
+    interface ThemeOptions {
+        status?: {
+            danger?: string;
+        };
     }
 }
 
-export interface ThemeProps {
-    theme: Theme;
-}
-
-const theme: Theme = {
-    colors
-};
-
-export default theme;
+export const theme = createTheme({
+    status: {
+        danger: orange[500],
+    },
+});
