@@ -1,23 +1,23 @@
 {
-  "slices": {
+  "src/slices": {
     "components": {
-      "homepage": {
-        "library": "slices",
-        "id": "homepage",
-        "name": "Homepage",
-        "description": "Homepage",
+      "card": {
+        "library": "src/slices",
+        "id": "card",
+        "name": "Card",
+        "description": "Card",
         "model": {
-          "id": "homepage",
+          "id": "card",
           "type": "SharedSlice",
-          "name": "Homepage",
-          "description": "Homepage",
+          "name": "Card",
+          "description": "Card",
           "variations": [
             {
               "id": "default",
               "name": "Default",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
-              "description": "Homepage",
+              "description": "Card",
               "primary": {
                 "title": {
                   "type": "StructuredText",
@@ -43,20 +43,20 @@
           "default": {
             "variation": "default",
             "name": "Default",
-            "slice_type": "homepage",
+            "slice_type": "card",
             "items": [],
             "primary": {
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Evolve visionary portals",
+                  "text": "Brand granular bandwidth",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Sint ea duis pariatur pariatur anim.",
+                  "text": "Sint incididunt amet culpa ex proident. In consectetur Lorem id ex ullamco aute tempor exercitation ad esse anim sint consectetur tempor. Nostrud sit do anim nostrud labore.",
                   "spans": []
                 }
               ]
@@ -66,7 +66,7 @@
         "meta": {
           "fileName": "index",
           "isDirectory": true,
-          "extension": "js"
+          "extension": "tsx"
         },
         "screenshotPaths": {}
       }

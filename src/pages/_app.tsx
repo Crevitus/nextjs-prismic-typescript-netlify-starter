@@ -4,9 +4,9 @@ import { PrismicProvider } from '@prismicio/react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Link from 'next/link';
-
-import { linkResolver, repositoryName } from 'prismicio';
 import { theme } from 'src/styles/theme';
+
+import { linkResolver, repositoryName } from '../services/prismic';
 
 function App({ Component, pageProps }: AppProps) {
     return (

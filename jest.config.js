@@ -1,21 +1,16 @@
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-    collectCoverageFrom: [
-        '**/*.{js,jsx,ts,tsx}',
-        '!**/*.d.ts',
-        '!**/node_modules/**',
-    ],
-    setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
-    testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+    globals: {
+        'ts-jest': {
+            tsconfig: 'tsconfig.test.json',
+        },
+    },
     transform: {
-        '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
-        '^.+\\.css$': '<rootDir>/config/jest/cssTransform.js',
+        '^.+\\.(tsx?|ts?)$': 'ts-jest',
     },
-    transformIgnorePatterns: [
-        '/node_modules/',
-        '^.+\\.module\\.(css|sass|scss)$',
-    ],
-    moduleNameMapper: {
-        '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
-        '@(components.*)$': '<rootDir>/src/$1',
-    },
+    modulePaths: ['<rootDir>'],
+    testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
+    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+    testEnvironment: 'jsdom',
+    setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
 };

@@ -5,12 +5,16 @@
   "status": true,
   "json": {
     "Main": {
-      "pageTitle": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
         "config": {
-          "label": "Page Title",
-          "placeholder": ""
-        },
-        "type": "Text"
+          "choices": {
+            "card": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     }
   }

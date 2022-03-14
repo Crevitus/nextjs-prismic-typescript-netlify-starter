@@ -37,8 +37,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-# Rider
+# Jetbrains
 .idea
 
 # Local Netlify folder
 .netlify
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

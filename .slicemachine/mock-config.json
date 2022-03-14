@@ -1,11 +1,8 @@
 {
-  "src/slices": {
-    "Example": {}
-  },
   "_cts": {
     "homepage": {}
   },
-  "slices": {
-    "Homepage": {}
+  "src/slices": {
+    "Card": {}
   }
 }
