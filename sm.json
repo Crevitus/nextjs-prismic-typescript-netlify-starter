@@ -4,7 +4,6 @@
         "@/src/slices"
     ],
     "_latest": "0.3.0",
-    "storybook": "http://localhost:6006",
     "framework": "previousNext",
     "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
 }

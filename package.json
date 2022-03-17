@@ -7,15 +7,12 @@
     "scripts": {
         "dev": "next dev",
         "slicemachine": "start-slicemachine",
-        "storybook": "start-storybook -p 6006",
         "open:site": "open http://localhost:3000",
-        "open:storybook": "open http://localhost:6006",
         "open:slicemachine": "open http://localhost:9999",
         "build": "next build",
         "start": "next start",
         "lint": "eslint src --fix",
-        "test": "jest",
-        "build-storybook": "build-storybook"
+        "test": "jest"
     },
     "repository": {
         "type": "git",
@@ -47,10 +44,6 @@
     },
     "devDependencies": {
         "@prismicio/types": "^0.1.27",
-        "@storybook/addon-actions": "^6.4.19",
-        "@storybook/addon-essentials": "^6.4.19",
-        "@storybook/addon-links": "^6.4.19",
-        "@storybook/react": "^6.4.19",
         "@testing-library/jest-dom": "^5.16.2",
         "@testing-library/react": "^12.1.4",
         "@types/jest": "^27.4.1",
@@ -60,9 +53,11 @@
         "eslint-config-next": "^12.1.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-jest-dom": "^4.0.1",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
         "eslint-plugin-unused-imports": "^2.0.0",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.5.1",
+        "open": "^8.4.0",
         "prettier": "^2.5.1",
         "react-test-renderer": "^17.0.2",
         "slice-machine-ui": "^0.3.1",
